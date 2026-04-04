@@ -1,0 +1,20 @@
+[project]
+name = "catstory-cube-automation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "mss>=10.1.0",
+    "numpy>=2.4.3",
+    "opencv-python>=4.13.0.92",
+    "paddleocr>=3.4.0",
+    "paddlepaddle>=3.2.2,<3.3.0",
+    "pyqt6>=6.10.2",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.19.0",
+    "pytest>=9.0.2",
+]

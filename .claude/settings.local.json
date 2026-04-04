@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(winget install:*)",
+      "Bash(/c/Users/StorM/AppData/Local/Programs/Python/Python312/python.exe -m pytest tests/test_condition.py -x --tb=short -q)"
+    ]
+  }
+}
