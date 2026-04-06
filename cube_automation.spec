@@ -110,6 +110,7 @@ exe = EXE(
     upx=True,
     console=False,
     icon=None,  # 可替換為 .ico 檔案路徑
+    uac_admin=True,  # 啟動時自動要求系統管理員權限（SendInput 需要與遊戲同權限）
 )
 
 coll = COLLECT(
