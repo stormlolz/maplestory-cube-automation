@@ -190,8 +190,8 @@ _TRAILING_DIGIT_NOISE = re.compile(
 
 def _fix_ocr_text(text: str) -> str:
     """修正 OCR 常見誤讀字元。"""
-    # 移除 OCR 產生的多餘空格（如「魔 法攻擊力」→「魔法攻擊力」）
-    text = text.replace(" ", "")
+    # 移除 OCR 產生的多餘空白（含全形空格 \u3000、tab 等 Unicode 空白）
+    text = re.sub(r"\s", "", text)
     # 先去除頭尾雜訊字元（电/专/中/！等框線裝飾被 OCR 辨識為文字）
     # 放在 _OCR_FIXES 之前，避免雜訊字元干擾替換匹配
     text = _LEADING_NOISE.sub("", text)
