@@ -6,7 +6,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/), versioning foll
 
 ## [Unreleased]
 
-## [0.5.0] - 2026-04-06
+## [1.1.0] - 2026-04-06
 
 ### Added
 
